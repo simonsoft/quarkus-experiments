@@ -1,14 +1,21 @@
 package se.simonsoft.experiment;
 
 import io.quarkus.test.junit.QuarkusTest;
+import io.quarkus.test.junit.mockito.InjectMock;
+
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
+
 @QuarkusTest
 public class MockResourceTest {
 
+	
+	@InjectMock
+	ServiceAnimal service;
+	
     @Test
     public void testHelloEndpoint() {
         given()
