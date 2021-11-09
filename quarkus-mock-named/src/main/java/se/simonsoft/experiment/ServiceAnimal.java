@@ -3,7 +3,7 @@ package se.simonsoft.experiment;
 
 public abstract class ServiceAnimal {
 
-	public String doSomething() {
+	public final String doSomething() {
 		return "done";
 	}
 	
