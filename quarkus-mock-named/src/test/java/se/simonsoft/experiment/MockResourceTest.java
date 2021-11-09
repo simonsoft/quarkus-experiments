@@ -15,7 +15,7 @@ public class MockResourceTest {
           .when().get("/named")
           .then()
              .statusCode(200)
-             .body(is("Hello RESTEasy"));
+             .body(is("cat - done"));
     }
 
 }
