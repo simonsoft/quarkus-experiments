@@ -1,8 +1,8 @@
 package se.simonsoft.experiment;
 
-import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Singleton;
 
-@ApplicationScoped
+@Singleton
 public class ServiceCat extends ServiceAnimal {
 
 	@Override
