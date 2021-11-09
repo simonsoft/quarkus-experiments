@@ -4,12 +4,12 @@ import javax.inject.Named;
 import javax.inject.Singleton;
 
 @Singleton
-@Named("cat")
-public class ServiceCat extends ServiceAnimal {
+@Named("rat")
+public class ServiceRat extends ServiceAnimal {
 
 	@Override
 	public String getName() {
-		return "cat";
+		return "rat";
 	}
 	
 	
